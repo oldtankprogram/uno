@@ -11,7 +11,11 @@ int main(){
     strcpy (array1, "Hello World");
 
     p_element = &array1[0];
-    putchar(*p_element);
+    for (i=0; i<10; i++){
+        putchar(*p_element);
+        p_element++;
+    }
+    
     return 0;
     
 }
