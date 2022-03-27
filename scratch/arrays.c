@@ -6,7 +6,7 @@
 int main(){
 
     char array1[20];
-    char *p_element;
+    char *p_element = &array1;
     int i;
 
     strcpy (array1, "Hello World");
