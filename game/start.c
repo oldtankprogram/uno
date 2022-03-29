@@ -21,7 +21,7 @@ int main(){
     current->p_next = malloc(sizeof(struct room));
     puts(current->roomName);
 
-    current = p_next;
+    current = current->p_next;
     strcpy (current->roomName, "Laboratory 2");
     strcpy (current->description, "Another Lab Room");
 
