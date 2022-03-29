@@ -6,10 +6,12 @@
 
 int main(){
 
-    struct room {char roomName[20];
+
+    int i;
+    /*struct room { char roomName[20];
     char description[200];
-    }
-    /*struct room *current;
+    };
+    struct room *current;
 
     current = malloc(sizeof(struct room));
     strcpy (current->roomName, "Laboratory");
