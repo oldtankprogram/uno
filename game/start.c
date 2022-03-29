@@ -8,7 +8,7 @@ int main(){
 
     struct room {char roomName[20];
     char description[200];
-    };
+    }
     /*struct room *current;
 
     current = malloc(sizeof(struct room));
