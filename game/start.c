@@ -7,8 +7,9 @@
 int main(){
 
     struct room {char roomName[20];
-    char description[200];};
-    struct room *current;
+    char description[200];
+    };
+    /*struct room *current;
 
     current = malloc(sizeof(struct room));
     strcpy (current->roomName, "Laboratory");
@@ -16,7 +17,7 @@ int main(){
 
     puts(current->roomName);
     free (current);
-    return 0;
+    return 0; */
 
 }
 
