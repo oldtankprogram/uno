@@ -7,8 +7,8 @@
 int main(){
 
 
-    int i;
-    /*struct room { char roomName[20];
+    
+    struct room { char roomName[20];
     char description[200];
     };
     struct room *current;
@@ -19,7 +19,7 @@ int main(){
 
     puts(current->roomName);
     free (current);
-    return 0; */
+    return 0; 
 
 }
 
@@ -29,4 +29,3 @@ int main(){
 
 
 
-}
