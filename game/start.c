@@ -15,7 +15,10 @@ int main(){
     struct room *current;
     struct room *orig;
 
+    
+
     current = malloc(sizeof(struct room));
+    orig = current;
     strcpy (current->roomName, "Laboratory");
     strcpy (current->description, "Lab Room");
     current->p_next = malloc(sizeof(struct room));
