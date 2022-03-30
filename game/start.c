@@ -19,7 +19,7 @@ int main(){
     orig = NULL;
 
 
-    if (current = malloc(sizeof(struct room)) == NULL) return 1;
+    if ((current = malloc(sizeof(struct room))) == NULL) return 1;
     current->p_next = NULL;
     orig = current;
     strcpy (current->roomName, "Laboratory");
