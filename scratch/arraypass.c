@@ -17,7 +17,7 @@ int main(){
 
 }
 
-arrayfun( a[]) {
-    puts(a);
+int arrayfun(char myarray[]]) {
+    puts(myarray);
     return 0;
 }
