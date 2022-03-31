@@ -5,8 +5,11 @@
 #include <string.h>
 
 
-int arrayfun(char myarray[]);
 
+int arrayfun(char myarray[]) {
+    puts(myarray);
+    return 0;
+}
 
 int main(){
 
@@ -18,7 +21,3 @@ int main(){
 
 }
 
-int arrayfun(char myarray[]) {
-    puts(myarray);
-    return 0;
-}
