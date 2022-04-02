@@ -27,7 +27,7 @@ int main()
     startNode = calloc(sizeof(struct squareNode), 1);
     startNode->isBegin = 1;
     curNode = startNode;
-    headClean.node = curNode;
+    headClean->node = curNode;
     buildMaze(startNode);
     if (curNode->isBegin == 1) {
         puts ("You're at the beginning.");
