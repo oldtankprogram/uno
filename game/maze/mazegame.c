@@ -31,6 +31,7 @@ int main()
     startNode->isBegin = 1;
     curNode = startNode;
     headClean->node = curNode;
+    printf ("Address of startNode in Main: %d", startNode);
     buildMaze(startNode);
     if (curNode->isBegin == 1) {
         puts ("You're at the beginning.");
@@ -51,6 +52,7 @@ int buildMaze (struct squareNode *startNode)
 {
 
     struct squareNode *curNode, *nextNode, *prevNode;
+    printf ("Address of startNode in function: %d", startNode);
     curNode = startNode;
 /* Create the entry platform node */
     nextNode = calloc(sizeof(struct squareNode), 1);
