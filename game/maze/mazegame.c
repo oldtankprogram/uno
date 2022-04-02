@@ -28,7 +28,7 @@ int main()
     startNode->isBegin = 1;
     curNode = startNode;
     headClean->node = curNode;
-    buildMaze(startNode);
+    buildMaze(&startNode);
     if (curNode->isBegin == 1) {
         puts ("You're at the beginning.");
     }
