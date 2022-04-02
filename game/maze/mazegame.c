@@ -3,42 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int buildMaze (struct squareNode *startNode)
-{
-
-    struct squareNode *curNode, *nextNode, *prevNode;
-    curNode = startNode;
-/* Create the entry platform node */
-    nextNode = calloc(sizeof(struct squareNode), 1);
-
-    startNode->north = nextNode;
-    startNode->south = NULL;
-    startNode->east = NULL;
-    startNode->west = NULL;
-/* Create the first node in the maze */
-    prevNode = curNode;
-    curNode = nextNode;
-    nextNode = calloc(sizeof(struct squareNode), 1);
-
-    curNode->north = nextNode;
-    curNode->east = NULL;
-    curNode->west = NULL;
-    curNode->south = prevNode;
-
-/* Create the second node in the maze */
-
-    prevNode = curNode;
-    curNode = nextNode;
-    nextNode = calloc(sizeof(struct squareNode), 1);
-
-    curNode->north = NULL;
-    curNode->east = NULL;
-    curNode->west = nextNode;
-    curNode->south = prevNode;
-
-
-    return 0;
-}
+int buildMaze (struct squareNode *startNode);
 
 int main()
 {
@@ -77,4 +42,41 @@ int main()
     return 0;
         
 
+}
+
+int buildMaze (struct squareNode *startNode)
+{
+
+    struct squareNode *curNode, *nextNode, *prevNode;
+    curNode = startNode;
+/* Create the entry platform node */
+    nextNode = calloc(sizeof(struct squareNode), 1);
+
+    startNode->north = nextNode;
+    startNode->south = NULL;
+    startNode->east = NULL;
+    startNode->west = NULL;
+/* Create the first node in the maze */
+    prevNode = curNode;
+    curNode = nextNode;
+    nextNode = calloc(sizeof(struct squareNode), 1);
+
+    curNode->north = nextNode;
+    curNode->east = NULL;
+    curNode->west = NULL;
+    curNode->south = prevNode;
+
+/* Create the second node in the maze */
+
+    prevNode = curNode;
+    curNode = nextNode;
+    nextNode = calloc(sizeof(struct squareNode), 1);
+
+    curNode->north = NULL;
+    curNode->east = NULL;
+    curNode->west = nextNode;
+    curNode->south = prevNode;
+
+
+    return 0;
 }
