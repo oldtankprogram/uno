@@ -26,7 +26,7 @@ int main()
     struct cleaner *headClean, *curClean;
 
     /* Initialize first node */
-
+    puts("bing");
     startNode = calloc(sizeof(struct squareNode), 1);
     startNode->isBegin = 1;
     curNode = startNode;
