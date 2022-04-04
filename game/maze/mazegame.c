@@ -33,7 +33,7 @@ int main()
     printf ("curNode: %d -- startNode: %d, size of headClean: %ld", curNode, startNode, sizeof(headClean));
     return 0;
     headClean->node = curNode;
-    printf ("headClean.node = %d", headClean.node);
+    printf ("headClean->node = %ld", headClean->node);
     printf ("Address of startNode in Main: %d", startNode);
     buildMaze(startNode);
     if (curNode->isBegin == 1) {
