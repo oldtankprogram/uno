@@ -30,9 +30,9 @@ int main()
     startNode = calloc(sizeof(struct squareNode), 1);
     startNode->isBegin = 1;
     curNode = startNode;
-    printf ("curNode: %d -- startNode: %d", curNode, startNode);
+    printf ("curNode: %d -- startNode: %d, size of headClean: %d", curNode, startNode, sizeof(headClean));
     return 0;
-    headClean.node = curNode;
+    headClean->node = curNode;
     printf ("headClean.node = %d", headClean.node);
     printf ("Address of startNode in Main: %d", startNode);
     buildMaze(startNode);
