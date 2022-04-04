@@ -31,7 +31,7 @@ int main()
     startNode->isBegin = 1;
     curNode = startNode;
     /* Initialize cleaner code */
-    headClean = calloc(sizeof(struct cleaner));
+    headClean = calloc(sizeof(struct cleaner), 1);
     headClean->node = curNode;
     return 0;
     printf ("headClean->node = %ld", headClean->node);
