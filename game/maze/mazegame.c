@@ -30,7 +30,7 @@ int main()
     startNode = calloc(sizeof(struct squareNode), 1);
     startNode->isBegin = 1;
     curNode = startNode;
-    printf ("curNode: %d -- startNode: %d, headClean: %ld", curNode, startNode, headClean);
+    printf ("curNode: %d -- startNode: %d, headClean: %ld", curNode, startNode, headClean->node);
     /*return 0;*/
     headClean->node = curNode;
     return 0;
