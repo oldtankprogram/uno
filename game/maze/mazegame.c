@@ -23,7 +23,7 @@ int main()
     struct cleaner    {struct squareNode *node;
                    struct squareNode *nextNode;
                    };
-    struct cleaner *headClean, *curClean;
+    struct cleaner *headClean, *curClean = NULL;
 
     /* Initialize first node */
     puts("bing");
