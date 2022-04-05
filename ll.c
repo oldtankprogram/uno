@@ -8,10 +8,17 @@
 int main() {
 
     struct student { char name[20];
-                    int age;};
-    struct student first;
+                    int age};
 
-    strcpy (first.name, "Charlie");
-    puts (first.name);
+    struct student *pool[20];
+
+    
+    pool[0] = calloc (1, sizeof(struct student));
+    strcpy ( pool[0].name, "Alfred");
+    puts (pool[0].name);
+    free (pool[0]);
+
     return 0;
+
+
 }
