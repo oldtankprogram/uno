@@ -8,7 +8,7 @@
 int main() {
 
     struct student { char name[20];
-                    int age};
+                    int age;};
 
     struct student *pool[20];
 
