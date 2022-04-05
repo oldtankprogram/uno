@@ -8,7 +8,8 @@
 int main() {
 
     struct student { char name[20];
-                    int age;} first;
+                    int age;};
+    struct student first;
 
     strcpy (first.name, "Charlie");
     puts (first.name);
