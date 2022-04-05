@@ -14,22 +14,22 @@ int main() {
 
     
     pool[0] = calloc (1, sizeof(struct student));
-    strcpy ( pool[0]->name, "Alfred");
+    strncpy ( pool[0]->name, "Alfred");
     pool[0]->age = 21;
     puts (pool[0]->name);
-    printf ("Age: %d", pool[0]->age);
+    printf ("Age: %d\n", pool[0]->age);
 
     pool[1] = calloc (1, sizeof(struct student));
-    strcpy ( pool[1]->name, "Brent");
+    strncpy ( pool[1]->name, "Brent");
     pool[1]->age = 20;
     puts (pool[1]->name);
-    printf ("Age: %d", pool[1]->age);
+    printf ("Age: %d\n", pool[1]->age);
 
     pool[2] = calloc (1, sizeof(struct student));
-    strcpy ( pool[2]->name, "Charlie");
+    strncpy ( pool[2]->name, "Charlie");
     pool[2]->age = 22;
     puts (pool[2]->name);
-    printf ("Age: %d", pool[2]->age);
+    printf ("Age: %d\n", pool[2]->age);
 
 
     free (pool[0]);
