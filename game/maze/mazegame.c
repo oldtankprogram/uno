@@ -33,7 +33,7 @@ int main()
     /* Initialize cleaner code */
     headClean = calloc(sizeof(struct cleaner), 1);
     headClean->node = curNode;
-    return 0;
+    curClean
     printf ("headClean->node = %ld", headClean->node);
     printf ("Address of startNode in Main: %d", startNode);
     buildMaze(startNode);
