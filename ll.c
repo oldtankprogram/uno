@@ -14,8 +14,8 @@ int main() {
 
     
     pool[0] = calloc (1, sizeof(struct student));
-    strcpy ( pool[0].name, "Alfred");
-    puts (pool[0].name);
+    strcpy ( pool[0]->name, "Alfred");
+    puts (pool[0]->name);
     free (pool[0]);
 
     return 0;
