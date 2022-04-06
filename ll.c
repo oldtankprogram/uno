@@ -43,7 +43,7 @@ for (a = 0; a < 20; a++)
 /* Traverse the pool, printing the data */
 
     while ( count < 3) {
-    printf ("Student %d is %s and is %d years old.\n", count, pool[count]->name, pool[coun-t]->age);
+    printf ("Student %d is %s and is %d years old.\n", count, pool[count]->name, pool[count]->age);
     count++;
     }
 
