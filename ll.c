@@ -11,8 +11,17 @@ int main() {
                     int age;};
 
     struct student *pool[20];
-
+    int a;
+    int count = 0;
     
+/*Initialize the pool */
+
+for (a = 0; a < 20; a++) 
+    pool[a] = NULL;
+
+
+
+
     pool[0] = calloc (1, sizeof(struct student));
     strncpy ( pool[0]->name, "Alfred", sizeof("Alfred") + 1);
     pool[0]->age = 21;
@@ -31,10 +40,21 @@ int main() {
     puts (pool[2]->name);
     printf ("Age: %d\n", pool[2]->age);
 
+/* Traverse the pool, printing the data */
 
-    free (pool[0]);
-    free (pool[1]);
-    free (pool[2]);
+    while ( count < 3) {
+    printf ("Student %d is %s and is %d years old.\n", count, pool[count]->name, pool[count]->age);
+    count++;
+    }
+
+/* Traverse the pool, freeing memory */
+    count = 0;
+
+    while ( count < 3) {
+        free pool[count];
+        count++;
+    }
+
 
     return 0;
 
