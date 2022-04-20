@@ -25,7 +25,7 @@ int main()
 
     puts ("Entering code");
     getline(&buffer, &bufsiz, fpin);
-    puts (buffer)
+    puts (buffer);
     return 0;
     
     
