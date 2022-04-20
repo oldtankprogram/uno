@@ -26,10 +26,10 @@ int main()
 
     puts ("Entering code");
     if (getline(&buffer, &bufsiz, fpin) < 1) {puts ("Empty file"); return 1;}
-    puts (buffer);
+    /*puts (buffer);*/
     puts("Reading the values into variables.");
     while (sscanf(buffer, "%d %d", &one, &two) > 0){
-        printf ("%d and %d", one, two);
+        printf ("%d and %d\n", one, two);
         if (getline(&buffer, &bufsiz, fpin) < 1) return 0;
     }
     return 0;
