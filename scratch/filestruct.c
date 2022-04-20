@@ -7,7 +7,7 @@
 int main()
 {
 
-    struct person {char *name; int age; struct person *next};
+    struct person {char *name; int age; struct person *next;};
     FILE *fpin;
     FILE *fpout;
     char *buffer;
