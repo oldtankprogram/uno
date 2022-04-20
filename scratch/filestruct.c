@@ -11,6 +11,7 @@ int main()
     FILE *fpin;
     FILE *fpout;
     char *buffer;
+    size_t bufsiz = 300;
 
     fpin = fopen ("/home/jamie/input", "r");
     fpout = fopen ("/home/jamie/output", "r+");
@@ -23,7 +24,7 @@ int main()
     }
 
     puts ("Entering code");
-    getline(&buffer, 300, fpin);
+    getline(&buffer, &bufsiz, fpin);
     puts (buffer)
     return 0;
     
