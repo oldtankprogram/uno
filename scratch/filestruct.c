@@ -27,7 +27,7 @@ int main()
     puts ("Entering code");
 
 
-    while (getline(&buffer, &bufsiz, fpin) > 0)){
+    while (getline(&buffer, &bufsiz, fpin) > 0){
         sscanf(buffer, "%d %d", &one, &two);
         printf ("%d and %d\n", one, two);
     }
