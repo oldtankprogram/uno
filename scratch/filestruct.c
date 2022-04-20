@@ -1,0 +1,36 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main()
+{
+
+    struct person {char *name; int age; struct person *next};
+    FILE *fpin;
+    FILE *fpout;
+    char *buffer;
+
+    fpin = fopen ("/home/jamie/input", "r");
+    fpout = fopen ("/home/jamie/output", "r+");
+
+    buffer = calloc(300, sizeof(char));
+
+    if (buffer == NULL) {
+        puts ("Unable to allocate memory for buffer.");
+        exit(1);
+    }
+
+    puts ("Entering code");
+    getline(&buffer, 300, fpin);
+    puts (buffer)
+    return 0;
+    
+    
+
+
+}
+
+
+
