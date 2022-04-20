@@ -30,7 +30,7 @@ int main()
     puts("Reading the values into variables.");
     while (sscanf(buffer, "%d %d", &one, &two) > 0){
         printf ("%d and %d", one, two);
-        getline(&buffer, &bufsiz, fpin);
+        if (getline(&buffer, &bufsiz, fpin) < 1) return 0;
     }
     return 0;
     
