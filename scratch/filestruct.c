@@ -28,7 +28,7 @@ int main()
     getline(&buffer, &bufsiz, fpin);
     puts (buffer);
     puts("Reading the values into variables.");
-    while (sscanf(buffer, "%d %d", &one, &two) != NUL){
+    while (sscanf(buffer, "%d %d", &one, &two) != NULL){
         printf ("%d and %d", one, two);
         getline(&buffer, &bufsiz, fpin);
     }
