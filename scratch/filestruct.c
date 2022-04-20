@@ -12,6 +12,7 @@ int main()
     FILE *fpout;
     char *buffer;
     size_t bufsiz = 300;
+    int one, two;
 
     fpin = fopen ("/home/jamie/input", "r");
     fpout = fopen ("/home/jamie/output", "r+");
@@ -26,6 +27,11 @@ int main()
     puts ("Entering code");
     getline(&buffer, &bufsiz, fpin);
     puts (buffer);
+    puts("Reading the values into variables.");
+    while (sscanf(buffer, "%d %d", &one, &two) != NUL){
+        printf ("%d and %d", one, two);
+        getline(&buffer, &bufsiz, fpin);
+    }
     return 0;
     
     
